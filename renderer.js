@@ -23,6 +23,12 @@ function initalise() {
      ipcRenderer.on('console_log', (event, arg) => {
           console.log(arg);
      });
+
+     createMessage("Ya yeet");
+     createMessage("what");
+     createMessage("is good");
+     createMessage("makin some elements");
+     createMessage("with js");
 }
 
 // When HTML loads, function runs.
@@ -30,4 +36,11 @@ document.onreadystatechange = function () {
      if (document.readyState == "complete") {
           initalise();
      }
-}; 1
+};
+
+function createMessage(content) {
+     var template = document.getElementById('message-template');
+     var clone = template.content.cloneNode(true);
+     clone.querySelector("p").innerHTML = content;
+     document.getElementById('message-list').appendChild(clone);
+}

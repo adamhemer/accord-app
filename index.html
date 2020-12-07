@@ -17,9 +17,7 @@
         </div>
     </div>
 </header>
-
 <body>
-    <!-- <h1>Application</h1> -->
     <div class="main-pane">
         <div class="channel-pane">
             <div class="channel-item">
@@ -38,7 +36,7 @@
             </div>
         </div>
         <div class="message-pane">
-            <ul>
+            <ul id="message-list">
                 <li>
                     <div class="message-item">
                         <p class="message-content">This is a message!</p>
@@ -46,6 +44,13 @@
                 </li>
             </ul>
         </div>
+        <template id="message-template">
+            <li>
+                <div class="message-item">
+                    <p class="message-content">This is a message!</p>
+                </div>
+            </li>
+        </template>
         <div class="compose-pane">
             <form id="login-form" method="post" action="#">
                 <input id="compose-field" type="text" name="message" placeholder="Enter message..."><br>
