@@ -1,0 +1,108 @@
+/* 
+Light -> Dark
+#F7F0F5
+#DECBB7
+#8F857D
+#5C5552
+#433633
+*/
+
+
+body {
+    padding: 0px;
+    margin: 0px; 
+    background-color: #5C5552;
+    height: calc(100vh - 30px);
+}
+
+h1 {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 3px 6px #433633;
+}
+
+input {
+    margin: 10px;
+    box-shadow: 3px 6px #433633;
+    border: none;
+    outline: none;
+}
+
+.input-field {
+    width: 80%;
+    padding: 3px;
+}
+
+#login-button {
+    padding: 3px 30px 3px 30px;
+}
+
+#form-container {
+    display: flex;
+    height: calc(100vh - 30px);
+    text-align: center;
+}
+
+#login-form {
+    margin: auto;
+    background-color: #8F857D;
+    border: solid #8F857D 10px;
+    box-shadow: 5px 10px #433633;
+    padding: 10px;
+    width: 300px;
+    height: 200px;
+}
+
+/* Title Bar and Window Buttons */
+#title-bar {
+    -webkit-app-region: drag;
+    height: 24px; 
+    background-color: #433633;
+    padding: none;
+    margin: 0px;
+    box-shadow: 0px, -10px, 0px, red;
+}
+
+#title {
+    position: fixed;
+    vertical-align: auto;
+    line-height: 24px;
+    top: 0px;
+    left: 8px;
+    color: #bcc1c9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+#title-bar-btns {
+    -webkit-app-region: no-drag;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+
+.title-btn {
+    width: 45px;
+    border: none;
+    border-radius: 0;
+    color: #bcc1c9;
+    background-color: transparent;
+    font-weight: lighter;
+    font-size: large;
+    outline: 0;
+}
+
+#close-btn:hover, #close-btn:focus {
+    background-color: red;
+}
+
+.title-btn:focus, .title-btn:hover {
+    background-color: #8F857D;
+}
+
+.title-btn:active {
+    color: black;
+    background-color: white;
+}
