@@ -1,21 +1,57 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Application</title>
-        <link rel="stylesheet" type="text/css" href="styles/index.css"><link>
-        <script src="./renderer.js"></script>
-    </head>
-    <header>
-        <div id="title-bar">
-            <div id="title">Knockoff Discord</div>
-            <div id="title-bar-btns">
-                 <button class="title-btn" id="min-btn">-</button>
-                 <button class="title-btn" id="max-btn">+</button>
-                 <button class="title-btn" id="close-btn">x</button>
+
+<head>
+    <title>Application</title>
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <link>
+    <script src="./renderer.js"></script>
+</head>
+<header>
+    <div id="title-bar">
+        <div id="title">Knockoff Discord</div>
+        <div id="title-bar-btns">
+            <button class="title-btn" id="min-btn">-</button>
+            <button class="title-btn" id="max-btn">+</button>
+            <button class="title-btn" id="close-btn">x</button>
+        </div>
+    </div>
+</header>
+
+<body>
+    <!-- <h1>Application</h1> -->
+    <div class="main-pane">
+        <div class="channel-pane">
+            <div class="channel-item">
+                <p class="channel-label"><b>#</b> analogue-parser</p>
             </div>
-       </div>
-    </header>
-    <body>
-        <h1>Application</h1>
-    </body>
+            <div class="channel-item">
+                <p class="channel-label"><b>#</b> engineering</p>
+            </div>
+            <div class="channel-item">
+                <p class="channel-label"><b>#</b> redstone-chat</p>
+            </div>
+        </div>
+        <div class="user-pane">
+            <div class="user-item">
+                <p class="user-label">OilyLoki</p>
+            </div>
+        </div>
+        <div class="message-pane">
+            <ul>
+                <li>
+                    <div class="message-item">
+                        <p class="message-content">This is a message!</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="compose-pane">
+            <form id="login-form" method="post" action="#">
+                <input id="compose-field" type="text" name="message" placeholder="Enter message..."><br>
+            </form>
+        </div>
+    </div>
+</body>
+
 </html>

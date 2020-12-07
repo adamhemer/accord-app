@@ -7,12 +7,94 @@ Light -> Dark
 #433633
 */
 
-
 body {
     padding: 0px;
     margin: 0px; 
     background-color: #5C5552;
     height: calc(100vh - 30px);
+}
+
+.main-pane {
+    height: 100%;
+    background-color: #5C5552;
+}
+
+.main-pane:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.channel-pane {
+    float: left;
+    width: 180px;
+    height: calc(100% - 20px);
+    background-color: #8F857D;
+    box-shadow: 3px 6px #433633;
+    margin: 10px;
+}
+
+.channel-item {
+    margin: 10px;
+    background-color: #DECBB7;
+    box-shadow: 3px 6px #433633;
+}
+
+.channel-label {
+    margin: 0;
+    padding: 5px;
+}
+
+.user-pane {
+    float: right;
+    width: 180px;
+    height: calc(100% - 20px);
+    background-color: #8F857D;
+    box-shadow: 3px 6px #433633;
+    margin: 10px;
+}
+
+.user-item {
+    margin: 10px;
+    background-color: #DECBB7;
+    box-shadow: 3px 6px #433633;
+}
+
+.user-label {
+    margin: 0;
+    padding: 5px;
+}
+
+.message-pane {
+    float: left;
+    width: calc(100% - 408px);
+    height: calc(100% - 60px);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.message-item {
+    margin: 10px;
+    padding: 8px;
+    box-shadow: 3px 6px #433633;
+    background-color: #8F857D;
+}
+
+.message-content {
+    margin: 0;
+}
+
+.compose-pane {
+    float: left;
+    width: calc(100% - 400px);
+    height: 50px;
+    box-shadow: 3px 6px #433633;
+    background-color: #8F857D;
+    text-align: center;
 }
 
 h1 {
@@ -23,35 +105,16 @@ h1 {
 }
 
 input {
-    margin: 10px;
+    margin: 14px;
+    width: 90%;
     box-shadow: 3px 6px #433633;
     border: none;
     outline: none;
 }
 
-.input-field {
-    width: 80%;
-    padding: 3px;
-}
-
-#login-button {
-    padding: 3px 30px 3px 30px;
-}
-
-#form-container {
-    display: flex;
-    height: calc(100vh - 30px);
-    text-align: center;
-}
-
 #login-form {
     margin: auto;
     background-color: #8F857D;
-    border: solid #8F857D 10px;
-    box-shadow: 5px 10px #433633;
-    padding: 10px;
-    width: 300px;
-    height: 200px;
 }
 
 /* Title Bar and Window Buttons */
