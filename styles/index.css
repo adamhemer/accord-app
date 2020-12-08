@@ -12,6 +12,7 @@ body {
     margin: 0px; 
     background-color: #5C5552;
     height: calc(100vh - 30px);
+    overflow: hidden;
 }
 
 .main-pane {
@@ -67,8 +68,14 @@ body {
 
 .message-pane {
     float: left;
-    width: calc(100% - 408px);
+    width: calc(100% - 400px);
     height: calc(100% - 60px);
+}
+
+nav ul {
+    height: calc(100vh - 90px);
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
 ul {
@@ -116,6 +123,26 @@ input {
     margin: auto;
     background-color: #8F857D;
 }
+
+/* Scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #8F857D;
+    box-shadow: 3px 6px #433633;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #DECBB7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #FFFFFF;
+} 
 
 /* Title Bar and Window Buttons */
 #title-bar {

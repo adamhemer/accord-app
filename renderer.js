@@ -29,6 +29,26 @@ function initalise() {
      createMessage("is good");
      createMessage("makin some elements");
      createMessage("with js");
+     createMessage("Ya yeet");
+     createMessage("what");
+     createMessage("is good");
+     createMessage("makin some elements");
+     createMessage("with js");
+     createMessage("Ya yeet");
+     createMessage("what");
+     createMessage("is good");
+     createMessage("makin some elements");
+     createMessage("with js");
+
+     var u = document.getElementById('message-list');
+     u.scrollTop = Number.MAX_SAFE_INTEGER;
+
+     document.getElementById('compose-form').addEventListener('submit', event => {
+          event.preventDefault();
+          let message = document.getElementById('compose-field').value;
+          console.log(message);
+     });
+
 }
 
 // When HTML loads, function runs.
